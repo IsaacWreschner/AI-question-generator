@@ -14,18 +14,18 @@ def generate_questions(text, num_questions=5):
         prompt=prompt,
         max_tokens= 3000,
         stop=None,
-        temperature=0.7,
+        temperature=0.7, #temperature can be from 0.1 to 1
     )
 
-    prompt = f"This following questions are based on this text"
+    #prompt2 = f"..."
     
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens= 3000,
-        stop=None,
-        temperature=0.7,
-    )
+    #response = openai.Completion.create(
+    #    engine="text-davinci-003",
+    #    prompt=prompt2,
+    #    max_tokens= 3000,
+    #    stop=None,
+    #    temperature=0.7,
+    #)
 
     print(response.choices[0].text)
    
