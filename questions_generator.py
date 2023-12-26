@@ -17,7 +17,7 @@ def generate_questions(text, num_questions=5):
         temperature=0.7, #temperature can be from 0.1 to 1
     )
 
-    #prompt2 = f"..."
+    #prompt2 = f"... {response} ... {text}"
     
     #response = openai.Completion.create(
     #    engine="text-davinci-003",
